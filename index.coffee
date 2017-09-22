@@ -2,7 +2,7 @@
 STOP_ID = 900000066256
 DIRECTION_NAME = "S+U Rathaus Steglitz"
 
-url = "https://vbb.transport.rest/stations/#{STOP_ID}/departures"
+url = "https://vbb.transport.rest/stations/#{STOP_ID}/departures?duration=45"
 
 command: "curl -s '#{url}'"
 
@@ -55,7 +55,7 @@ timeDiffMin: (time) ->
 
 render: (out) ->
   @getBus(out, 0)
-  
+
 style: """
   // position on screen
   bottom: 225px;
