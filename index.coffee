@@ -55,19 +55,20 @@ timeDiffMin: (time) ->
 
 render: (out) ->
   @getBus(out, 0)
-
+  
 style: """
   // position on screen
-  bottom: 225px;
-  right: 5px;
+  top: 125px;
+  left: 30px;
 
   position: fixed;
   -webkit-font-smoothing: antialiased; // nicer font rendering
   color: #2e2e2e;
 
-  font: 32pt "Zilla Slab Highlight Regular", monospace;
+  font: 32pt "SF Pro Display", "Zilla Slab Highlight Regular", monospace;
 
   .time
-    font: 32pt "Zilla Slab Highlight Bold", monospace;
+    font: 32pt "SF Pro Display", "Zilla Slab Highlight Bold", monospace;
+    font-weight: 600
 
 """
