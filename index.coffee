@@ -2,7 +2,7 @@
 STOP_ID = 900000066256
 DIRECTION_NAME = "S+U Rathaus Steglitz"
 
-url = "https://vbb.transport.rest/stations/#{STOP_ID}/departures?duration=45"
+url = "https://vbb-rest-wosxxhemiv.now.sh/stations/#{STOP_ID}/departures?duration=45"
 
 command: "curl -s '#{url}'"
 
